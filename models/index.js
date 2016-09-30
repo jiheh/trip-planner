@@ -9,4 +9,10 @@ Restaurant.belongsTo(Place);
 Activity.belongsTo(Place);
 Hotel.belongsTo(Place);
 
-module.exports = db;
+module.exports = {
+  db: db,
+  Place: Place,
+  Hotel: Hotel,
+  Restaurant: Restaurant,
+  Activity: Activity
+};

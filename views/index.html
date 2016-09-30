@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+  <div class="content">
+{% block content %}
+
+Hotels:
+<ul>
+{% for hotel in Hotels %}
+
+  <li>{{hotel.name}}</li>
+
+{ % endfor % }
+</ul>
+
+Restaurants:
+
+
+Activies:
+
+
+{% endblock %}
+</div>
+</body>
+</html>
