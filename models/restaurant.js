@@ -7,11 +7,11 @@ var Restaurant = db.define('restaurant', {
 		allowNull: false
 	},
 	cuisine: {
-		type: Sequelize.ARRAY(Sequelize.STRING),
+		type: Sequelize.STRING,
 		allowNull: false
 	},
 	price: {
-		type: Sequelize.RANGE(Sequelize.INTEGER),
+		type: Sequelize.DECIMAL,
 		allowNull: false,
 		validate: {
 			min: 1,
