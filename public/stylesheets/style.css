@@ -1,2 +1,23 @@
 body {
   color: red; }
+
+.navbar {
+  margin-bottom: 0px; }
+
+.content {
+  overflow-y: hidden;
+  height: 100vh; }
+
+.map {
+  float: left;
+  width: 70%;
+  height: calc(100% - 55px);
+  background-color: grey; }
+
+.options {
+  height: calc(45%);
+  background-color: blue; }
+
+.days {
+  background-color: #daa520;
+  height: calc(55%); }

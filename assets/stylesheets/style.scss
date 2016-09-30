@@ -1,3 +1,30 @@
 body {
 	color: red;
 }
+
+$navbar_height: 50px;
+
+.navbar {
+	margin-bottom: 0px;
+	// height: $navbar_height;
+}
+.content {
+	overflow-y:hidden;
+	height: 100vh;
+}
+.map {
+	float:left;
+	width: 70%;
+	height: calc(100% - 55px);
+	background-color: grey;
+}
+
+.options {
+	height: calc(45%);
+	background-color: blue;
+}
+
+.days {
+	background-color: #daa520;
+	height: calc(55%);
+}
