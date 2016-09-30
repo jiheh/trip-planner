@@ -24,7 +24,8 @@ app.use(morgan('dev'));
 // });
 
 
-app.use(Express.static('/public'));
+app.use('/bootstrap', Express.static('node_modules/bootstrap/dist'));
+app.use('/jquery', Express.static('node_modules/jquery/dist'));
 
 app.use('/', routes);
 

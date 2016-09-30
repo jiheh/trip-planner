@@ -1,26 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head></head>
+{% extends "layout.html" %}
 <body>
   <div class="content">
 {% block content %}
 
 Hotels:
-<ul>
+<select>
 {% for hotel in Hotels %}
-
-  <li>{{hotel.name}}</li>
-
+  <option>{{hotel.name}}</option>
 {% endfor %}
-</ul>
+</select>
 
 Restaurants:
+<select>
+{% for restaurant in Restaurants %}
+  <option>{{restaurant.name}}</option>
+{% endfor %}
+</select>
 
-
-Activies:
-
+Activities:
+<select>
+{% for activity in Activities %}
+  <option>{{activity.name}}</option>
+{% endfor %}
+</select>
 
 {% endblock %}
 </div>
 </body>
-</html>
